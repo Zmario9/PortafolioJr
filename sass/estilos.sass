@@ -1,0 +1,248 @@
+//importes
+@import 'importados/AnchosYLargos'
+@import 'importados/FlexContainers'
+@import 'importados/Colores.sass'
+@import 'importados/Fuentes.sass'
+@import 'importados/HeaderModels.sass'
+@import 'importados/bordesDecorativos.sass'
+@mixin logosConocimientos($fondoimagen, $tamano)
+    background:
+        image: url($fondoimagen)
+        repeat: no-repeat
+        size: $tamano //60px
+        position: center
+
+@keyframes animate
+    40%, 60%
+        left: 100%
+    100%
+        left: 0%
+
+@keyframes slide
+    100%
+        top: -10 * $fuenteFifhteen
+
+html
+    @extend %anchoYalturaHtml, %FlexColumnNoWrap
+    body
+        @extend %anchoYalturaTotal, %FlexColumnNoWrap
+        background-color: $VerdeOscurecido
+        header
+            @extend %anchoTotal
+            height: 20%
+            background-image: linear-gradient(0deg, $Transparencia 3%, $AmarilloClaro 40%)
+            #MobileHeader
+                @extend %anchoYalturaTotal, %FlexColumnNoWrap, %align-items-center, %justify-cont-evenly, %fuenteOrangeKid
+                img
+                    width: 80px
+                    height: 80px
+                ul
+                    @extend %FlexRowNoWrap, %justify-cont-evenly, %anchoTotal
+                    margin: 0
+                    padding: 0
+                    list-style: none
+                    li
+                        @extend %displayFlex, %justify-cont-center, %align-items-center
+                        height: 30px
+                        width: 23%
+                        border: 1px solid $AmarilloClaro
+                        background-color: $Aquamarina
+                        font-size: .7em
+                        &:hover
+                            background-color: $AmarilloClaro
+                            color: $VerdeOscurecido
+            #DesktopHeader
+                @extend %anchoYalturaTotal, %FlexColumnNoWrap, %align-items-center, %justify-cont-evenly, %fuenteOrangeKid
+                height: 134px
+                img
+                    width: 90px
+                    height: 90px
+                ul
+                    @extend %FlexRowNoWrap, %align-items-center, %justify-cont-evenly
+                    width: 70%
+                    height: 50%
+                    list-style: none
+                    margin: 0
+                    padding: 0
+                    li
+                        @extend %altoTotal, %FlexRowNoWrap, %align-items-center, %justify-cont-evenly
+                        //border: 1px solid $AmarilloClaro
+                        //background-color: $Aquamarina
+                        font-size: 1.5em
+                        width: 15vh
+                        &:hover
+                            //background-color: $AmarilloClaro
+                            color: $VerdeOscurecido
+        main
+            @extend %anchoTotal, %FlexColumnNoWrap, %align-items-center
+            height: 75%
+            .contenedorDev
+                @extend %fuenteOrangeKid
+                font-size: 1.5em
+                .contenedorTextoAnimado
+                    @extend %displayFlex
+                    align-items: center
+                .textoNoAnimado
+                    margin-right: 5%
+                    //font-size: $fuenteFifhteen
+                    font-weight: 500
+                .textosAnimados
+                    position: relative
+                    //font-size: $fuenteFifhteen
+                    font-weight: 500
+                #cuadro1
+                    @extend %altoTotal, %displayFlex
+                    justify-content: end
+                    width: 50%
+                #cuadro2
+                    @extend %altoTotal
+                    width:50%
+                    .primerText
+                        color: white
+                    .segundoText
+                        overflow: hidden
+                        color: $AmarilloClaro
+                        &::before
+                            @extend %anchoYalturaTotal
+                            content: ""
+                            position: absolute
+                            top: 0
+                            left: 0
+                            background-color: $VerdeOscurecido
+                            border-left: 2px solid $AmarilloClaro
+                            animation: animate 4s steps(12) infinite
+            .devText
+                @extend %justify-cont-center
+            .centrarEvenly
+                @extend %justify-cont-evenly
+            .seccionesPC
+                @extend %anchoTotal, %displayFlex, %align-items-center, %fuenteOrangeKid
+                overflow: hidden
+                height: 20%
+                .conocimientosPC
+                    height: 70px
+                    width: 70px
+                #BS
+                    @include logosConocimientos($fondoimagen: "../img/boostrap.png", $tamano:100px)
+                #HT
+                    @include logosConocimientos($fondoimagen: "../img/html5.png", $tamano: 75px)
+                #css
+                    @include logosConocimientos($fondoimagen: "../img/css3.png", $tamano: 75px)
+                #js
+                    @include logosConocimientos($fondoimagen: "../img/javascript.png", $tamano: 90px)
+                #jq
+                    @include logosConocimientos($fondoimagen: "../img/jquery.png", $tamano: 60px)
+                #sas
+                    @include logosConocimientos($fondoimagen: "../img/sass.png", $tamano: 80px)
+                #gitgud
+                    @include logosConocimientos($fondoimagen: "../img/git.png", $tamano: 60px)
+            .seccionCentral
+                @extend %anchoTotal, %displayFlex, %justify-cont-center, %align-items-center, %fuenteOrangeKid
+                height: 60%
+                #carouselTrabajosPC
+                    height: 100%
+                    width: 600px
+                    .carousel-inner
+                        @extend %anchoYalturaTotal
+                        .carousel-item
+                            @extend %anchoYalturaTotal
+                    #opcionOne
+                        background-image: url('../img/trabajo1.png')
+                        background-size: cover
+                        background-repeat: no-repeat
+                        background-position: center
+                    #opcionTwo
+                        background-image: url('../img/saffron.png')
+                        background-size: cover
+                        background-repeat: no-repeat
+                        background-position: center
+                    #opcionThree
+                        background-image: url('../img/boo.png')
+                        background-size: cover
+                        background-repeat: no-repeat
+                        background-position: center
+            .devPc
+                @extend %FlexRowNoWrap
+                .textoPC
+                    position: relative
+                    font-size: 1.6em
+                    font-weight: 600
+                .segundoTextoPc
+                    @extend %displayFlex
+                    margin-left: 1%
+                    &::before
+                        @extend %anchoYalturaTotal
+                        content: ""
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background-color: $VerdeOscurecido
+                        border-left: 2px solid $AmarilloClaro
+                        animation: animate 4s steps(12) infinite
+            .SeccionesTrabajos
+                @extend %anchoTotal, %FlexRowWrap, %justify-cont-evenly, %align-items-center
+                height: 33.33%
+                #opcion1
+                    background-image: url('../img/trabajo1.png')
+                    background-size: cover
+                    background-repeat: no-repeat
+                    background-position: center
+                #opcion2
+                    background-image: url('../img/saffron.png')
+                    background-size: cover
+                    background-repeat: no-repeat
+                    background-position: center
+                #opcion3
+                    background-image: url('../img/boo.png')
+                    background-size: cover
+                    background-repeat: no-repeat
+                    background-position: center
+                #carouselTrabajos
+                    @extend %anchoYalturaTotal
+                    .carousel-inner
+                        @extend %anchoYalturaTotal
+                        .carousel-item
+                            @extend %anchoYalturaTotal                           
+            .SeccionConocimientos
+                @extend %anchoTotal, %justify-cont-evenly, %align-items-center
+                height: 20%
+            .logoConocimientos
+                height: 42px
+                width: 42px
+            #sec1
+                background-color: $VerdeOscurecido
+                h1
+                    @extend %fuenteGothic
+            #bootstrap
+                @include logosConocimientos($fondoimagen: "../img/boostrap.png", $tamano: 60px)
+            #html5
+                @include logosConocimientos($fondoimagen: "../img/html5.png", $tamano: 60px)
+            #css3
+                @include logosConocimientos($fondoimagen: "../img/css3.png", $tamano: 60px)
+            #javascript
+                @include logosConocimientos($fondoimagen: "../img/javascript.png", $tamano: 55px)
+            #jquery
+                @include logosConocimientos($fondoimagen: "../img/jquery.png", $tamano: 30px)
+            #sass
+                @include logosConocimientos($fondoimagen: "../img/sass.png", $tamano: 60px)
+            #git
+                @include logosConocimientos($fondoimagen: "../img/git.png", $tamano: 35px)
+        footer
+            @extend %anchoTotal, %fuenteOrangeKid
+            text-align: center
+            height: 5%
+            background-color: $AmarilloVerdoso
+            #footerMobile
+                font-size: .8em
+            #footerPC
+                font-size: 1.2em
+                
+                
+                
+            
+                
+                
+                
+ 
+                    
+

@@ -1,0 +1,355 @@
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+html body main .SeccionesTrabajos #carouselTrabajos .carousel-inner .carousel-item, html body main .SeccionesTrabajos #carouselTrabajos .carousel-inner, html body main .SeccionesTrabajos #carouselTrabajos, html body main .devPc .segundoTextoPc::before, html body main .seccionCentral #carouselTrabajosPC .carousel-inner .carousel-item, html body main .seccionCentral #carouselTrabajosPC .carousel-inner, html body main .contenedorDev #cuadro2 .segundoText::before, html body header #DesktopHeader, html body header #MobileHeader, html body {
+  height: 100%;
+  width: 100%;
+}
+
+html body footer, html body main .SeccionConocimientos, html body main .SeccionesTrabajos, html body main .seccionCentral, html body main .seccionesPC, html body main, html body header #MobileHeader ul, html body header {
+  width: 100%;
+}
+
+html body main .contenedorDev #cuadro2, html body main .contenedorDev #cuadro1, html body header #DesktopHeader ul li {
+  height: 100%;
+}
+
+html body main .devPc .segundoTextoPc, html body main .seccionCentral, html body main .seccionesPC, html body main .contenedorDev #cuadro1, html body main .contenedorDev .contenedorTextoAnimado, html body header #MobileHeader ul li, html body main .SeccionesTrabajos, html body main, html body header #DesktopHeader, html body header #MobileHeader, html body, html, html body main .devPc, html body header #DesktopHeader ul li, html body header #DesktopHeader ul, html body header #MobileHeader ul {
+  display: flex;
+}
+
+html body main .devPc, html body header #DesktopHeader ul li, html body header #DesktopHeader ul, html body header #MobileHeader ul {
+  flex-flow: row nowrap;
+}
+
+html body main, html body header #DesktopHeader, html body header #MobileHeader, html body, html {
+  flex-flow: column nowrap;
+}
+
+html body main .SeccionesTrabajos {
+  flex-flow: row wrap;
+}
+
+html body main .seccionCentral, html body main .devText, html body header #MobileHeader ul li {
+  justify-content: center;
+}
+
+html body main .SeccionConocimientos, html body main .SeccionesTrabajos, html body main .centrarEvenly, html body header #DesktopHeader ul li, html body header #DesktopHeader ul, html body header #DesktopHeader, html body header #MobileHeader ul, html body header #MobileHeader {
+  justify-content: space-evenly;
+}
+
+html body main .SeccionConocimientos, html body main .SeccionesTrabajos, html body main .seccionCentral, html body main .seccionesPC, html body main, html body header #DesktopHeader ul li, html body header #DesktopHeader ul, html body header #DesktopHeader, html body header #MobileHeader ul li, html body header #MobileHeader {
+  align-items: center;
+}
+
+@font-face {
+  font-family: orangeKid;
+  src: url("../../fuentes/orange_kid.ttf");
+}
+@font-face {
+  font-family: goth;
+  src: url("../../fuentes/bgothl.tff");
+}
+html body footer, html body main .seccionCentral, html body main .seccionesPC, html body main .contenedorDev, html body header #DesktopHeader, html body header #MobileHeader {
+  font-family: orangeKid;
+}
+
+html body main #sec1 h1 {
+  font-family: goth;
+}
+
+@-webkit-keyframes animate {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@-webkit-keyframes slide {
+  100% {
+    top: -150px;
+  }
+}
+@keyframes slide {
+  100% {
+    top: -150px;
+  }
+}
+html body {
+  background-color: #08C076;
+}
+html body header {
+  height: 20%;
+  background-image: linear-gradient(0deg, rgba(255, 0, 0, 0) 3%, rgb(247, 220, 111) 40%);
+}
+html body header #MobileHeader img {
+  width: 80px;
+  height: 80px;
+}
+html body header #MobileHeader ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html body header #MobileHeader ul li {
+  height: 30px;
+  width: 23%;
+  border: 1px solid rgb(247, 220, 111);
+  background-color: #87E1C6;
+  font-size: 0.7em;
+}
+html body header #MobileHeader ul li:hover {
+  background-color: rgb(247, 220, 111);
+  color: #08C076;
+}
+html body header #DesktopHeader {
+  height: 134px;
+}
+html body header #DesktopHeader img {
+  width: 90px;
+  height: 90px;
+}
+html body header #DesktopHeader ul {
+  width: 70%;
+  height: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+html body header #DesktopHeader ul li {
+  font-size: 1.5em;
+  width: 15vh;
+}
+html body header #DesktopHeader ul li:hover {
+  color: #08C076;
+}
+html body main {
+  height: 75%;
+}
+html body main .contenedorDev {
+  font-size: 1.5em;
+}
+html body main .contenedorDev .contenedorTextoAnimado {
+  align-items: center;
+}
+html body main .contenedorDev .textoNoAnimado {
+  margin-right: 5%;
+  font-weight: 500;
+}
+html body main .contenedorDev .textosAnimados {
+  position: relative;
+  font-weight: 500;
+}
+html body main .contenedorDev #cuadro1 {
+  justify-content: end;
+  width: 50%;
+}
+html body main .contenedorDev #cuadro2 {
+  width: 50%;
+}
+html body main .contenedorDev #cuadro2 .primerText {
+  color: white;
+}
+html body main .contenedorDev #cuadro2 .segundoText {
+  overflow: hidden;
+  color: rgb(247, 220, 111);
+}
+html body main .contenedorDev #cuadro2 .segundoText::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #08C076;
+  border-left: 2px solid rgb(247, 220, 111);
+  -webkit-animation: animate 4s steps(12) infinite;
+          animation: animate 4s steps(12) infinite;
+}
+html body main .seccionesPC {
+  overflow: hidden;
+  height: 20%;
+}
+html body main .seccionesPC .conocimientosPC {
+  height: 70px;
+  width: 70px;
+}
+html body main .seccionesPC #BS {
+  background-image: url("../img/boostrap.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+}
+html body main .seccionesPC #HT {
+  background-image: url("../img/html5.png");
+  background-repeat: no-repeat;
+  background-size: 75px;
+  background-position: center;
+}
+html body main .seccionesPC #css {
+  background-image: url("../img/css3.png");
+  background-repeat: no-repeat;
+  background-size: 75px;
+  background-position: center;
+}
+html body main .seccionesPC #js {
+  background-image: url("../img/javascript.png");
+  background-repeat: no-repeat;
+  background-size: 90px;
+  background-position: center;
+}
+html body main .seccionesPC #jq {
+  background-image: url("../img/jquery.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+}
+html body main .seccionesPC #sas {
+  background-image: url("../img/sass.png");
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: center;
+}
+html body main .seccionesPC #gitgud {
+  background-image: url("../img/git.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+}
+html body main .seccionCentral {
+  height: 60%;
+}
+html body main .seccionCentral #carouselTrabajosPC {
+  height: 100%;
+  width: 600px;
+}
+html body main .seccionCentral #carouselTrabajosPC #opcionOne {
+  background-image: url("../img/trabajo1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html body main .seccionCentral #carouselTrabajosPC #opcionTwo {
+  background-image: url("../img/saffron.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html body main .seccionCentral #carouselTrabajosPC #opcionThree {
+  background-image: url("../img/boo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html body main .devPc .textoPC {
+  position: relative;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+html body main .devPc .segundoTextoPc {
+  margin-left: 1%;
+}
+html body main .devPc .segundoTextoPc::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #08C076;
+  border-left: 2px solid rgb(247, 220, 111);
+  -webkit-animation: animate 4s steps(12) infinite;
+          animation: animate 4s steps(12) infinite;
+}
+html body main .SeccionesTrabajos {
+  height: 33.33%;
+}
+html body main .SeccionesTrabajos #opcion1 {
+  background-image: url("../img/trabajo1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html body main .SeccionesTrabajos #opcion2 {
+  background-image: url("../img/saffron.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html body main .SeccionesTrabajos #opcion3 {
+  background-image: url("../img/boo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html body main .SeccionConocimientos {
+  height: 20%;
+}
+html body main .logoConocimientos {
+  height: 42px;
+  width: 42px;
+}
+html body main #sec1 {
+  background-color: #08C076;
+}
+html body main #bootstrap {
+  background-image: url("../img/boostrap.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+}
+html body main #html5 {
+  background-image: url("../img/html5.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+}
+html body main #css3 {
+  background-image: url("../img/css3.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+}
+html body main #javascript {
+  background-image: url("../img/javascript.png");
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: center;
+}
+html body main #jquery {
+  background-image: url("../img/jquery.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+}
+html body main #sass {
+  background-image: url("../img/sass.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+}
+html body main #git {
+  background-image: url("../img/git.png");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: center;
+}
+html body footer {
+  text-align: center;
+  height: 5%;
+  background-color: #B1DD16;
+}
+html body footer #footerMobile {
+  font-size: 0.8em;
+}
+html body footer #footerPC {
+  font-size: 1.2em;
+}/*# sourceMappingURL=estilos.css.map */

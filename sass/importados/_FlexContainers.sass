@@ -1,0 +1,56 @@
+//FLEX DIRECTIONS Y DISPLAY
+%displayFlex
+    display: flex
+
+%FlexRowNoWrap
+    @extend %displayFlex
+    flex-flow: row nowrap //Para no tener que poner flex-direction ni wrap, es 2 en 1
+
+%FlexColumnNoWrap
+    @extend %displayFlex
+    flex-flow: column nowrap
+
+%FlexRowWrap
+    flex-flow: row wrap
+    @extend %displayFlex
+
+%FlexColumnWrap
+    @extend %displayFlex
+    flex-fow: column wrap
+
+//Justify content
+
+%justify-cont-center
+    justify-content: center
+
+%justify-cont-evenly
+    justify-content: space-evenly
+
+%justify-cont-between
+    justify-content: space-between
+
+%justify-cont-around
+    justify-content: space-around
+
+%justify-cont-start
+    justify-content: start
+
+%justify-cont-end
+    justify-content: end
+
+//align-items
+
+%align-items-start
+    align-items: start
+
+%align-items-end
+    align-items: end 
+
+%align-items-center
+    align-items: center
+
+%align-items-baseline
+    align-items: baseline
+
+%align-items-stretch
+    align-items: stretch
