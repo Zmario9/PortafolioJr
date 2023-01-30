@@ -16,7 +16,7 @@ html body main .contenedorDev #cuadro2, html body main .contenedorDev #cuadro1, 
   height: 100%;
 }
 
-html body main .devPc .segundoTextoPc, html body main .seccionCentral, html body main .seccionesPC, html body main .contenedorDev #cuadro1, html body main .contenedorDev .contenedorTextoAnimado, html body header #MobileHeader ul li, html body main .SeccionesTrabajos, html body main, html body header #DesktopHeader, html body header #MobileHeader, html body, html, html body main .devPc, html body header #DesktopHeader ul li, html body header #DesktopHeader ul, html body header #MobileHeader ul {
+html body main .devPc .segundoTextoPc, html body main .seccionCentral, html body main .seccionesPC, html body main .contenedorDev #cuadro1, html body main .contenedorDev .contenedorTextoAnimado, html body header #MobileHeader ul li, html body main .SeccionesTrabajos, html body header, html body main, html body header #DesktopHeader, html body header #MobileHeader, html body, html, html body main .devPc, html body header #DesktopHeader ul li, html body header #DesktopHeader ul, html body header #MobileHeader ul {
   display: flex;
 }
 
@@ -28,11 +28,11 @@ html body main, html body header #DesktopHeader, html body header #MobileHeader,
   flex-flow: column nowrap;
 }
 
-html body main .SeccionesTrabajos {
+html body main .SeccionesTrabajos, html body header {
   flex-flow: row wrap;
 }
 
-html body main .seccionCentral, html body main .devText, html body header #MobileHeader ul li {
+html body main .seccionCentral, html body main .devText, html body header #MobileHeader ul li, html body header {
   justify-content: center;
 }
 
@@ -87,6 +87,9 @@ html body main #sec1 h1 {
     top: -150px;
   }
 }
+html {
+  min-height: 900px;
+}
 html body {
   background-color: #08C076;
 }
@@ -115,7 +118,7 @@ html body header #MobileHeader ul li:hover {
   color: #08C076;
 }
 html body header #DesktopHeader {
-  height: 134px;
+  max-width: 1200px;
 }
 html body header #DesktopHeader img {
   width: 90px;
@@ -130,7 +133,7 @@ html body header #DesktopHeader ul {
 }
 html body header #DesktopHeader ul li {
   font-size: 1.5em;
-  width: 15vh;
+  width: 25%;
 }
 html body header #DesktopHeader ul li:hover {
   color: #08C076;
@@ -139,6 +142,7 @@ html body main {
   height: 75%;
 }
 html body main .contenedorDev {
+  max-width: 1200px;
   font-size: 1.5em;
 }
 html body main .contenedorDev .contenedorTextoAnimado {
@@ -179,6 +183,7 @@ html body main .contenedorDev #cuadro2 .segundoText::before {
 html body main .seccionesPC {
   overflow: hidden;
   height: 20%;
+  max-width: 1200px;
 }
 html body main .seccionesPC .conocimientosPC {
   height: 70px;
@@ -228,10 +233,12 @@ html body main .seccionesPC #gitgud {
 }
 html body main .seccionCentral {
   height: 60%;
+  max-width: 1200px;
 }
 html body main .seccionCentral #carouselTrabajosPC {
   height: 100%;
-  width: 600px;
+  width: 100%;
+  max-width: 820px;
 }
 html body main .seccionCentral #carouselTrabajosPC #opcionOne {
   background-image: url("../img/trabajo1.png");
