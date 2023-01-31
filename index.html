@@ -35,13 +35,13 @@
                 <div class="textoNoAnimado primerText">Me dedico al</div>
             </div>
             <div class="contenedorTextoAnimado" id="cuadro2">
-                <div class="textosAnimados segundoText">FullStack Development</div>
+                <div class="textosAnimados segundoText">FullStack Dev</div>
             </div>
         </div>
         <div class="SeccionesTrabajos d-flex d-sm-none" id="sec2">
             <div id="carouselTrabajos" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active border-bottom border-warning border-top" id="opcion1">
+                  <div class="carousel-item active border-bottom border-warning border-top" data-bs-toggle="modal" data-bs-target="#modalMemoria" id="opcion1">
                     <!--<img src="..." class="d-block w-100" alt="..."> -->
                   </div>
                   <div class="carousel-item border-bottom border-warning border-top" id="opcion2">
@@ -108,11 +108,30 @@
           <div class="rounded-circle border border-warning conocimientosPC" id="gitgud"></div>
         </div>
     </main>
-    
     <footer>
         <span id="footerMobile" class="d-block d-md-none">© Todos los dererechos reservados. José Manuel Correa Castro</span>
         <span id="footerPC" class="d-none d-md-block">© Todos los dererechos reservados. José Manuel Correa Castro</span>
-    </footer>    
+    </footer>  
+    <!-- MODALES -->
+    <div class="modal fade modales" id="modalMemoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" id="memContent">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Juego de memoria funcional</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Es uno de los mayores trabajos que he hecho en menos de 3 días como proyecto encargado en la academia donde estudio, programado con JQuery JavaScript y un poco de CSS,
+            pues lo que más me importaba para aquél entonces era simplemente que el juego pudiera funcionar.
+            <img src="./img/MemoriaCap1.PNG" alt="Memoria1" class="imagenesModales">
+            <img src="./img/MemoriaCap2.PNG" alt="Memoria2" class="imagenesModales">
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>  
 </body>
 <script src="./js/jquery-3.6.1.min.js"></script>
 <script src="./js/funciones.js"></script>

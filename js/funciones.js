@@ -3,8 +3,6 @@ const texto = $(".segundoText");
 const textoPC =$(".segundoTextoPc");
 const textoCargar =()=>{
     setInterval(()=>{
-        console.log(contador);
-        console.log("funciona")
         switch(contador){
             case 1: 
                 texto.text("BackEnd Dev");

@@ -24,6 +24,15 @@
 
 
 html
+    .modales
+        #memContent
+            @extend %fuenteOrangeKid
+            border: solid 5px $AmarilloClaro
+            color: white
+            background-color: #324d34
+        img
+            width: 100%
+            height: 5%
     @extend %anchoYalturaHtml, %FlexColumnNoWrap
     min-height: 900px //quitarlo para que funcione los vh, es un responsive perfecto en celulares pero daña la experiencia de pc.
     body
@@ -50,7 +59,7 @@ html
                         width: 23%
                         border: 1px solid $AmarilloClaro
                         background-color: $Aquamarina
-                        font-size: .7em
+                        font-size: .9em
                         &:hover
                             background-color: $AmarilloClaro
                             color: $VerdeOscurecido

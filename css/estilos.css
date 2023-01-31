@@ -52,7 +52,7 @@ html body main .SeccionConocimientos, html body main .SeccionesTrabajos, html bo
   font-family: goth;
   src: url("../../fuentes/bgothl.tff");
 }
-html body footer, html body main .seccionCentral, html body main .seccionesPC, html body main .contenedorDev, html body header #DesktopHeader, html body header #MobileHeader {
+html body footer, html body main .seccionCentral, html body main .seccionesPC, html body main .contenedorDev, html body header #DesktopHeader, html body header #MobileHeader, html .modales #memContent {
   font-family: orangeKid;
 }
 
@@ -90,6 +90,15 @@ html body main #sec1 h1 {
 html {
   min-height: 900px;
 }
+html .modales #memContent {
+  border: solid 5px rgb(247, 220, 111);
+  color: white;
+  background-color: #324d34;
+}
+html .modales img {
+  width: 100%;
+  height: 5%;
+}
 html body {
   background-color: #08C076;
 }
@@ -111,7 +120,7 @@ html body header #MobileHeader ul li {
   width: 23%;
   border: 1px solid rgb(247, 220, 111);
   background-color: #87E1C6;
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 html body header #MobileHeader ul li:hover {
   background-color: rgb(247, 220, 111);
